@@ -1,0 +1,50 @@
+﻿@model Haris.Models.Restaurant
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Restaurant</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.location)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.location)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_of_rooms)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_of_rooms)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.no_of_staff)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.no_of_staff)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
